@@ -1,104 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Fly By Night Fares</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <script src="jQuery/jquery-2.1.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script>
-    function sleep(milliseconds) {
-      var start = new Date().getTime();
-      for (var i = 0; i < 1e7; i++) {
-        if ((new Date().getTime() - start) > milliseconds){
-          break;
-        }
-      }
-    }
-    sleep(30000);
-  </script>
+    <title>Fly By Night Fares</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="jQuery/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script>
+        // sleep(30000);
+    </script>
 </head>
 <body style="padding-top: 50px; padding-bottom: 66px;">
-  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse"
-       role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse"
+     role="navigation">
     <div class="container">
-      <div class="navbar-header">
-	      <!--
-        <a class="navbar-brand" href="#">
-          <img src="images/fly-by-night.png"
-               width="111" height="82"
-               style="margin-top:-24px; margin-left:-24px;" />
-        </a>
-	-->
-        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                data-target="#navbarToCollapse">
-          <span class="sr-only">Toggle header</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarToCollapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Find a flight</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Sign-Up</a></li>
-          <li><a href="#">Login</a></li>
-        </ul>
-      </div>
+        <div class="navbar-header">
+            <!--
+          <a class="navbar-brand" href="#">
+            <img src="images/fly-by-night.png"
+                 width="111" height="82"
+                 style="margin-top:-24px; margin-left:-24px;" />
+          </a>
+      -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#navbarToCollapse">
+                <span class="sr-only">Toggle header</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarToCollapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Find a flight</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Sign-Up</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
     </div>
-  </nav>
-  <div class="jumbotron">
+</nav>
+<div class="jumbotron">
     <div class="container">
-	    <!-- <img class="img-responsive" width="200px" height="300px" src="images/fly-by-night.png"/> -->
-      <h2>Welcome to Fly By Night Fares!</h2>
-      <p>Do you like to travel on the cheap? <strong>Yes!</strong></p>
-      <p>Are you willing to fly at night? <strong>Yes!<strong></p>
-      <p>Welcome, you have found your one stop airfare search site.</p>
-      <p>Instantly fall in love with <em>Fly By Night Fares</em> deeply
-      discounted flights...when you fly at night.
-      </p>
-      <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        <!-- <img class="img-responsive" width="200px" height="300px" src="images/fly-by-night.png"/> -->
+        <h2>Welcome to Fly By Night Fares!</h2>
+        <p>Do you like to travel on the cheap? <strong>Yes!</strong></p>
+        <p>Are you willing to fly at night? <strong>Yes!</strong></p>
+        <p>Welcome, you have found your one stop airfare search site.</p>
+        <p>Instantly fall in love with <em>Fly By Night Fares</em> deeply
+            discounted flights...when you fly at night.
+        </p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
     </div>
-  </div>
-  <div class="container">
+</div>
+<div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <h2>The Destinations</h2>
-        <p>You fly at night but the destinations are outta sight!</p>
-        <p>
-          <a class="btn btn-success btn-lg" role="button">
-            Learn more &raquo;
-          </a>
-        </p>
-        <img class="img-responsive" src="images/airplane-wing.jpg" />
-      </div>
-      <div class="col-sm-4">
-        <h2>Our Customers</h2>
-        <p>Testimonials from customer who use our fare search.</p>
-        <p>
-          <a class="btn btn-default btn-lg" role="button">
-            Learn more &raquo;
-          </a>
-        </p>
-        <img class="img-responsive" src="images/sea-man-beach-holiday.jpg" />
-      </div>
-      <div class="col-sm-4">
-        <h2>The Savings</h2>
-        <p>Give a little (fly at night) gain a lot of savings!</p>
-        <p>
-          <a class="btn btn-default btn-lg" role="button">
-            Learn more &raquo;
-          </a>
-        </p>
-        <img class="img-responsive" src="images/money-card-business-credit-card.jpeg" />
-      </div>
+        <div class="col-sm-4">
+            <h2>The Destinations</h2>
+            <p>You fly at night but the destinations are outta sight!</p>
+            <p>
+                <a class="btn btn-success btn-lg" role="button">
+                    Learn more &raquo;
+                </a>
+            </p>
+            <img class="img-responsive"
+                 src="http://deelay.me/5000/http://fbn-web-2140330064.us-west-1.elb.amazonaws.com/images/airplane-wing.jpg"/>
+        </div>
+        <div class="col-sm-4">
+            <h2>Our Customers</h2>
+            <p>Testimonials from customer who use our fare search.</p>
+            <p>
+                <a class="btn btn-default btn-lg" role="button">
+                    Learn more &raquo;
+                </a>
+            </p>
+            <img class="img-responsive"
+                 src="http://deelay.me/2000/http://fbn-web-2140330064.us-west-1.elb.amazonaws.com/images/sea-man-beach-holiday.jpg"/>
+        </div>
+        <div class="col-sm-4">
+            <h2>The Savings</h2>
+            <p>Give a little (fly at night) gain a lot of savings!</p>
+            <p>
+                <a class="btn btn-default btn-lg" role="button">
+                    Learn more &raquo;
+                </a>
+            </p>
+            <img class="img-responsive"
+                 src="http://deelay.me/2000/http://fbn-web-2140330064.us-west-1.elb.amazonaws.com/images/money-card-business-credit-card.jpeg"/>
+        </div>
     </div>
-  </div>
-  <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
     <div class="container">
-      <p class="navbar-text">&copy; Fly By Night Fares LLC, 2016</p>
+        <p class="navbar-text">&copy; Fly By Night Fares LLC, 2016</p>
     </div>
-  </nav>
+</nav>
 </body>
 </html>
